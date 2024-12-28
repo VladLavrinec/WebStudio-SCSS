@@ -1,0 +1,88 @@
+.section.section-ot {
+    background-color: $color-background-light;
+}
+
+.tittle {
+    color: $color-background-dark;
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.ot-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.ot-item {
+    background-color: $color-light;
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 3 * 30px) / 4);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.ot-title {
+    color: $color-font-text;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 auto;
+
+}
+
+.ot-filter-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    transition-property: background-color fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ot-filter-link:hover {
+    background-color: $color-font-active;
+}
+
+.ot-filter-link:hover .ot-filter-image {
+    fill: $color-background-light;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ot-text {
+    color: $color-background-dark;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 auto 10px;
+}
+
+.container-ot-text {
+    padding: 30px 32px 30px;
+    text-align: center;
+
+}
+
+.ot-filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    margin-top: 16px;
+}
+
+.ot-filter-item {
+    flex-basis: calc((100% - 3 * 10px) / 4);
+}
+
+.ot-filter-image {
+    fill: $color-border-rc;
+    width: 20px;
+    height: 20px;
+}

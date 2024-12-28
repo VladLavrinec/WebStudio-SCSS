@@ -1,0 +1,35 @@
+.wwd-title {
+    color: $color-font-title;
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.wwd-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.wwd-item {
+    display: flex;
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    position: relative;
+}
+
+.wwd-text {
+    position: absolute;
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-background-light;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 27px 0;
+    background-color: rgba(47, 48, 58, 0.8);
+}

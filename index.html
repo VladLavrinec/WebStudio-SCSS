@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <!-- шапка сайту -->
+    <header class="header">
+        <div class="container section-header">
+            <a class="logo" href="./"><span class="web">Web</span><span class="studio">Studio</span> </a>
+            <!-- меню навігацій -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a id="studio" class="nav-link" href="./index.html">Студія</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./portdolio.html">Портфоліо</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contacts-list">
+                <li class="contacts-item">
+                    <a class="contacts-link" href="mailto:info@devstudio.com">
+                        <svg class="contacts-icon" width="16px" height="12px">
+                            <use href="./icons/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts-item">
+                    <a class="contacts-link" href="tel:+380961111111">
+                        <svg class="contacts-icon" width="10px" height="16px">
+                            <use href="./icons/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- hero - головна частина -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <!-- Hero -->
+                <h1 class="hero-title">
+                    Ефективні рішення для вашого бізнесу
+                </h1>
+                <button type="button" class="hero-button" data-modal-open>
+                    Замовити послугу
+                </button>
+            </div>
+        </section>
+        <!-- HWW - How We Work -->
+        <section class="section">
+            <div class="container">
+                <h2 class="hww-title">
+                    як ми працюєм
+                </h2>
+                <ul class="hww-list">
+
+                    <!-- ANTENA -->
+
+                    <li class="hww-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <div class="hww-background">
+                            <svg width="60px" height="60px" class="hww-icon">
+                                <use href="./icons/symbol-defs.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
+                        <h3 class="hww-list-title">
+                            УВАГА ДО ДЕТАЛЕЙ
+                        </h3>
+                        <p class="hww-text">
+                            Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                        </p>
+                    </li>
+
+                    <!-- CLOCK -->
+
+                    <li class="hww-item punctuality" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <div class="hww-background">
+                            <svg width="60px" height="60px" class="hww-icon">
+                                <use href="./icons/symbol-defs.svg#icon-clock"></use>
+                            </svg>
+                        </div>
+                        <h3 class="hww-list-title">
+                            ПУНКТУАЛЬНІСТЬ
+                        </h3>
+                        <p class="hww-text">
+                            Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                        </p>
+                    </li>
+
+                    <!-- LAPTOPE -->
+
+                    <li class="hww-item planning" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <div class="hww-background">
+                            <svg width="60px" height="60px" class="hww-icon">
+                                <use href="./icons/symbol-defs.svg#icon-laptop"></use>
+                            </svg>
+                        </div>
+                        <h3 class="hww-list-title">
+                            ПЛАНУВАННЯ
+                        </h3>
+                        <p class="hww-text">
+                            Так само консультація з широким активом значною мірою зумовлює.
+                        </p>
+                    </li>
+
+                    <!-- ASTRONAUT -->
+
+                    <li class="hww-item state-of-the-art" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <div class="hww-background">
+                            <svg width="60px" height="60px" class="hww-icon">
+                                <use href="./icons/symbol-defs.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
+                        <h3 class="hww-list-title">
+                            СУЧАСНІ ТЕХНОЛОГІЇ
+                        </h3>
+                        <p class="hww-text">
+                            Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <!-- WWD - What We Do -->
+        <section class="section">
+            <div class="container">
+
+
+
+                <h2 class="title">
+                    Чим ми займаємося
+                </h2>
+
+                <!-- LIST -->
+
+                <ul class="wwd-list">
+
+                    <!-- ITEM N1 -->
+
+                    <li class="wwd-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <img class="wwd-img" src="./images/keyboard.jpg" alt="зображення клавиатури" width="370">
+                        <p class="wwd-text">
+                            десктопні додатки
+                        </p>
+                    </li>
+
+                    <!-- ITEM N2 -->
+
+                    <li class="wwd-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <img class="wwd-img" src="./images/laptop.jpg" alt="зображення ноутбуку" width="370">
+                        <p class="wwd-text">
+                            мобільні додатки
+                        </p>
+                    </li>
+
+                    <!-- ITEM N3 -->
+
+                    <li class="wwd-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <img class="wwd-img" src="./images/tablet.jpg" alt="зображення планшету" width="370">
+                        <p class="wwd-text">
+                            дизайнерські рішення
+                        </p>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!--OT - Our Team -->
+
+        <section class="section section-ot">
+
+            <div class="container">
+
+                <!-- TITLE -->
+
+                <h2 class="title">
+                    Наша команда
+                </h2>
+
+                <!-- LIST -->
+
+                <ul class="ot-list">
+
+                    <!-- ITEM N1 -->
+
+                    <li class="ot-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <img class="ot-img" src="./images/product-designer.jpg" alt="зображеня чоловіка" width="270">
+                        <div class="container-ot-text">
+                            <h3 class="ot-text">
+                                Ігор Дем'яненко
+                            </h3>
+                            <p class="ot-title">
+                                Product Designer
+                            </p>
+                            <ul class="ot-filter-list">
+
+                                <!-- 1 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-instagram"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <!-- 2 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-twitter"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <!-- 3 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-facebook"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <!-- 4 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-linkedin"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- ITEM N2 -->
+
+                    <li class="ot-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <img class="" src="./images/frontend-developer.jpg" alt="зображеня жінки" width="270">
+                        <div class="container-ot-text">
+                            <h3 class="ot-text">
+                                Ольга Рєпіна
+                            </h3>
+                            <p class="ot-title">
+                                Frontend Developer
+                            </p>
+                            <ul class="ot-filter-list">
+
+                                <!-- 1 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-instagram"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <!-- 2 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-twitter"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <!-- 3 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-facebook"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <!-- 4 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-linkedin"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- ITEM N3 -->
+
+                    <li class="ot-item" data-aos="fade-up">
+                        <img class="" src="./images/marketing.jpg" alt="зображеня чоловіка" width="270">
+                        <div class="container-ot-text">
+                            <h3 class="ot-text">
+                                Микола Тарасов
+                            </h3>
+                            <p class="ot-title">
+                                Marketing
+                            </p>
+                            <ul class="ot-filter-list">
+
+                                <!-- 1 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-instagram"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <!-- 2 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-twitter"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <!-- 3 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-facebook"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <!-- 4 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-linkedin"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- ITEM N4 -->
+
+                    <li class="ot-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <img class="" src="./images/ul-designer.jpg" alt="зображеня чоловіка" width="270">
+                        <div class="container-ot-text">
+                            <h3 class="ot-text">
+                                Михайло Єрмаков
+                            </h3>
+                            <p class="ot-title">
+                                UI Designer
+                            </p>
+                            <ul class="ot-filter-list">
+
+                                <!-- 1 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-instagram"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <!-- 2 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-twitter"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <!-- 3 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-facebook"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <!-- 4 -->
+
+                                <li class="ot-filter-item">
+                                    <a class="ot-filter-link" href="">
+                                        <svg class="ot-filter-image">
+                                            <use href="./icons/symbol-defs.svg#icon-linkedin"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- RC - Regular customers  -->
+        <section class="section">
+            <div class="container">
+                <h2 class="title">
+                    Постійні клієнти
+                </h2>
+                <ul class="rc-list">
+                    <!-- 1 -->
+                    <li class="rc-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <svg width="41px" height="46px" class="rc-image">
+                            <use href="./icons/symbol-defs.svg#icon-client-1"> </use>
+                        </svg>
+                    </li>
+                    <!-- 2 -->
+                    <li class="rc-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <svg width="40px" height="51px" class="rc-image">
+                            <use href="./icons/symbol-defs.svg#icon-client-2"> </use>
+                        </svg>
+                    </li>
+                    <!-- 3 -->
+                    <li class="rc-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <svg width="45px" height="42px" class="rc-image">
+                            <use href="./icons/symbol-defs.svg#icon-client-3"> </use>
+                        </svg>
+                    </li>
+                    <!-- 4 -->
+                    <li class="rc-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <svg width="84px" height="40px" class="rc-image">
+                            <use href="./icons/symbol-defs.svg#icon-clientr-4"> </use>
+                        </svg>
+                    </li>
+                    <!-- 5 -->
+                    <li class="rc-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <svg width="63px" height="47px" class="rc-image">
+                            <use href="./icons/symbol-defs.svg#icon-client-5"> </use>
+                        </svg>
+                    </li>
+                    <!-- 6 -->
+                    <li class="rc-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <svg width="94px" height="45px" class="rc-image">
+                            <use href="./icons/symbol-defs.svg#icon-client-6"> </use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- підвал сайту -->
+    <footer class="footer">
+        <div class="container footer-position">
+            <div class="footer-part">
+                <a class="logo" href="./"><span class="web">Web</span><span class="footer-studio">Studio</span></a>
+                <address class="footer-hero">
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+            <!-- 2 -->
+
+            <div class="footer-part">
+                <h3 class="footer-title">
+                    приєднуйтесь
+                </h3>
+                <ul class="follow-list">
+                    <!-- 1 -->
+                    <li class="follow-item">
+                        <a class="follow-link" href="./">
+                            <svg class="follow-image">
+                                <use href="./icons/symbol-defs.svg#icon-instagram"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- 2 -->
+                    <li class="follow-item">
+                        <a class="follow-link" href="./">
+                            <svg class="follow-image">
+                                <use href="./icons/symbol-defs.svg#icon-twitter"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- 3 -->
+                    <li class="follow-item">
+                        <a class="follow-link" href="./">
+                            <svg class="follow-image">
+                                <use href="./icons/symbol-defs.svg#icon-facebook"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- 4 -->
+                    <li class="follow-item">
+                        <a class="follow-link" href="./">
+                            <svg class="follow-image">
+                                <use href="./icons/symbol-defs.svg#icon-linkedin"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 3 -->
+
+            <div class="footer-part footer-part-3">
+                <form autocomplete="on">
+                    <label for="email" class="label-footer">Підпишіться на розсилку</label>
+                    <div class="input-footer-container">
+                        <input type="text" id="email" class="input-footer" placeholder="E-mail">
+                    </div>
+                </form>
+
+                <button type="button" class="footer-follow-btn">
+                    Підписатися
+                    <svg class="footer-follow-btn-icon">
+                        <use href="./icons/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Розмітка модального вікна -->
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg width="11px" height="11px" class="modal-close-btn-icon">
+                    <use href="./icons/symbol-defs.svg#icon-close-btn"></use>
+                </svg>
+            </button>
+
+            <p class="modal-text">
+                Залиште свої дані, ми вам передзвонимо
+            </p>
+            <form autocomplete="on">
+
+                <!-- Name -->
+
+                <div class="hero-modal-form-filed">
+                    <label for="name" class="hero-modal-label">Ім'я</label>
+                    <div class="input-container">
+                        <input type="text" id="name" class="hero-modal-input" required>
+                        <svg class="hero-modal-icon" width="12" height="12">
+                            <use href="./icons/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+
+                <div class="hero-modal-form-filed">
+                    <label for="number" class="hero-modal-label">Телефон</label>
+                    <div class="input-container">
+                        <input type="text" id="number" class="hero-modal-input" required>
+                        <svg class="hero-modal-icon" width="12" height="12">
+                            <use href="./icons/symbol-defs.svg#icon-phone-modal"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Email -->
+
+                <div class="hero-modal-form-filed">
+                    <label for="email" class="hero-modal-label">Коментар</label>
+                    <div class="input-container">
+                        <input type="text" id="email" class="hero-modal-input" required>
+                        <svg class="hero-modal-icon" width="12" height="12">
+                            <use href="./icons/symbol-defs.svg#icon-envelope-modal"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Comment -->
+
+                <div class="hero-modal-form-filed">
+                    <label for="comments" class="hero-modal-label">Коментар</label>
+                    <div class="input-container">
+                        <textarea name="comments" id="comments" class="hero-modal-comment"
+                            placeholder="Введіть текст"></textarea>
+                    </div>
+                </div>
+
+                <!-- CheckBox -->
+
+                <div class="hero-modal-checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox" class="hero-input-check">
+                    <label for="checkbox" class="hero-label-check">
+                        Погоджуюся з розсилкою та приймаю
+                        <a href="./" class="hero-modal-check-link">Умови договору</a>
+                    </label>
+                </div>
+            </form>
+            <button type="button" class="modal-button">
+                Відправити
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+</body>
+
+</html>

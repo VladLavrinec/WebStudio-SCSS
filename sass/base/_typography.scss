@@ -1,0 +1,28 @@
+body {
+    font-family: $font-family;
+    font-weight: 400;
+    line-height: 1.71;
+    font-size: 14px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.web {
+    color: $color-font-active;
+}
+
+.studio {
+    color: $color-dark;
+}
+
+.footer-studio {
+    color: $color-background-light;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}

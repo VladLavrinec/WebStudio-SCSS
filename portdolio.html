@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <!-- шапка сайту -->
+    <header class="header">
+        <div class="container section-header">
+            <a class="logo" href="./"><span class="web">Web</span><span class="studio">Studio</span> </a>
+            <!-- меню навігацій -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Студія</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="portfolio" class="nav-link" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contacts-list">
+                <li class="contacts-item">
+                    <a class="contacts-link" href="mailto:info@devstudio.com">
+                        <svg class="contacts-icon" width="16px" height="12px">
+                            <use href="./icons/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts-item">
+                    <a class="contacts-link" href="tel:+380961111111">
+                        <svg class="contacts-icon" width="10px" height="16px">
+                            <use href="./icons/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- головна частина -->
+    <main>
+        <!-- gallery -->
+        <section class="gallery">
+
+            <div class="container">
+                <h2 class="filter-tittle">
+                    наші проекти
+                </h2>
+
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <button class="filter-button" type="submit">
+                            усі
+                        </button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button class="filter-button" type="submit">
+                            Веб-сайти
+                        </button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button class="filter-button" type="submit">
+                            Додатки
+                        </button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button class="filter-button" type="submit">
+                            Дизайн
+                        </button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button class="filter-button" type="submit">
+                            Маркетинг
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <h2 class="portfolio-tittle">
+                    Фільтр
+                </h2>
+
+                <!-- 1 -->
+                <ul class="hero-portfolio-list">
+                    <li class="hero-portfolio-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <div class="hero-portfolio-img-container">
+                            <img class="hero-portfolio-item-img" src="./images/tehnoryk.jpg" alt="Технокряк">
+                            <p class="hero-portfolio-img-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <h3 class="hero-portfolio-item-tittle">
+                            Технокряк
+                        </h3>
+
+                        <p class="hero-portfolio-item-text">
+                            Веб-сайт
+                        </p>
+                    </li>
+                    <!-- 2 -->
+                    <li class="hero-portfolio-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <div class="hero-portfolio-img-container">
+                            <img class="hero-portfolio-item-img" src="./images/newotleanvsgoldenstar.jpg"
+                                alt="Постер New Orlean vs Golden Star">
+                            <p class="hero-portfolio-img-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <h3 class="hero-portfolio-item-tittle">
+                            Постер New Orlean vs Golden Star
+                        </h3>
+
+                        <p class="hero-portfolio-item-text">
+                            Дизайн
+                        </p>
+                    </li>
+                    <!-- 3 -->
+                    <li class="hero-portfolio-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <div class="hero-portfolio-img-container">
+                            <img class="hero-portfolio-item-img" src="./images/seafood.jpg" alt="Ресторан Seafood">
+                            <p class="hero-portfolio-img-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <h3 class="hero-portfolio-item-tittle">
+                            Ресторан Seafood
+                        </h3>
+
+                        <p class="hero-portfolio-item-text">
+                            Додаток
+                        </p>
+                    </li>
+                    <!-- 4 -->
+                    <li class="hero-portfolio-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <div class="hero-portfolio-img-container">
+                            <img class="hero-portfolio-item-img" src="./images/projectprime.jpg" alt="Проєкт Prime">
+                            <p class="hero-portfolio-img-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <h3 class="hero-portfolio-item-tittle">
+                            Проєкт Prime
+                        </h3>
+                        <p class="hero-portfolio-item-text">
+                            Маркетинг
+                        </p>
+                    </li>
+                    <!-- 5 -->
+                    <li class="hero-portfolio-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <div class="hero-portfolio-img-container">
+                            <img class="hero-portfolio-item-img" src="./images/projectboxes.jpg" alt="Проєкт Boxes">
+                            <p class="hero-portfolio-img-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <h3 class="hero-portfolio-item-tittle">
+                            Проєкт Boxes
+                        </h3>
+                        <p class="hero-portfolio-item-text">
+                            Додаток
+                        </p>
+                    </li>
+                    <!-- 6 -->
+                    <li class="hero-portfolio-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <div class="hero-portfolio-img-container">
+                            <img class="hero-portfolio-item-img" src="./images/Inspirationhasnoborders.jpg"
+                                alt="Inspiration has no Borders">
+                            <p class="hero-portfolio-img-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <h3 class="hero-portfolio-item-tittle">
+                            Inspiration has no Borders
+                        </h3>
+                        <p class="hero-portfolio-item-text">
+                            Веб-сайт
+                        </p>
+                    </li>
+                    <!-- 7 -->
+                    <li class="hero-portfolio-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <div class="hero-portfolio-img-container">
+                            <img class="hero-portfolio-item-img" src="./images/limitededition.jpg"
+                                alt="Видання Limited Edition">
+                            <p class="hero-portfolio-img-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <h3 class="hero-portfolio-item-tittle">
+                            Видання Limited Edition
+                        </h3>
+                        <p class="hero-portfolio-item-text">
+                            Дизайн
+                        </p>
+                    </li>
+                    <!-- 8 -->
+                    <li class="hero-portfolio-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <div class="hero-portfolio-img-container">
+                            <img class="hero-portfolio-item-img" src="./images/lab.jpg" alt="Проєкт LAB">
+                            <p class="hero-portfolio-img-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <h3 class="hero-portfolio-item-tittle">
+                            Проєкт LAB
+                        </h3>
+                        <p class="hero-portfolio-item-text">
+                            Маркетинг
+                        </p>
+                    </li>
+                    <!-- 9 -->
+                    <li class="hero-portfolio-item" data-aos="fade-up">
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <div class="hero-portfolio-img-container">
+                            <img class="hero-portfolio-item-img" src="./images/growingbusiness.jpg"
+                                alt="Growing Business">
+                            <p class="hero-portfolio-img-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <h3 class="hero-portfolio-item-tittle">
+                            Growing Business
+                        </h3>
+                        <p class="hero-portfolio-item-text">
+                            Додаток
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <!-- підвал сайту -->
+    <!-- підвал сайту -->
+    <footer class="footer">
+        <div class="container footer-position">
+            <div class="footer-part">
+                <a class="logo" href="./"><span class="web">Web</span><span class="footer-studio">Studio</span></a>
+                <address class="footer-hero">
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+            <!-- 2 -->
+
+            <div class="footer-part">
+                <h3 class="footer-title">
+                    приєднуйтесь
+                </h3>
+                <ul class="follow-list">
+                    <!-- 1 -->
+                    <li class="follow-item">
+                        <a class="follow-link" href="./">
+                            <svg class="follow-image">
+                                <use href="./icons/symbol-defs.svg#icon-instagram"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- 2 -->
+                    <li class="follow-item">
+                        <a class="follow-link" href="./">
+                            <svg class="follow-image">
+                                <use href="./icons/symbol-defs.svg#icon-twitter"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- 3 -->
+                    <li class="follow-item">
+                        <a class="follow-link" href="./">
+                            <svg class="follow-image">
+                                <use href="./icons/symbol-defs.svg#icon-facebook"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- 4 -->
+                    <li class="follow-item">
+                        <a class="follow-link" href="./">
+                            <svg class="follow-image">
+                                <use href="./icons/symbol-defs.svg#icon-linkedin"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 3 -->
+
+            <div class="footer-part footer-part-3">
+                <form autocomplete="on">
+                    <label for="email" class="label-footer">Підпишіться на розсилку</label>
+                    <div class="input-footer-container">
+                        <input type="text" id="email" class="input-footer" placeholder="E-mail">
+                    </div>
+                </form>
+
+                <button type="button" class="footer-follow-btn">
+                    Підписатися
+                    <svg class="footer-follow-btn-icon">
+                        <use href="./icons/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

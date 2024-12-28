@@ -1,0 +1,33 @@
+.rc-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.rc-item {
+    border: 1px solid $color-border-rc;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    flex-basis: calc((100% - 5 * 30px) / 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rc-item:hover {
+    border: 1px solid $color-font-active;
+}
+
+.rc-image {
+    fill: $color-border-rc;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rc-item:hover .rc-image {
+    fill: $color-font-active;
+}
