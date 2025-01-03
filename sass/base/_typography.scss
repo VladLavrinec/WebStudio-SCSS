@@ -7,6 +7,13 @@ body {
     margin: 0 auto;
 }
 
+.logo {
+    color: $color-font-active;
+    font-family: $second-family;
+    font-weight: 700;
+    font-size: 26px;
+}
+
 .web {
     color: $color-font-active;
 }

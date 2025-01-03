@@ -18,141 +18,193 @@
 </head>
 
 <body>
-    <!-- шапка сайту -->
+
+
+    <!-- ШАПКА САЙТУ -->
+
+
     <header class="header">
-        <div class="container section-header">
+        <div class="container container__header">
+
+
+            <!-- ЛОГОТИП -->
+
+
             <a class="logo" href="./"><span class="web">Web</span><span class="studio">Studio</span> </a>
-            <!-- меню навігацій -->
+
+
+            <!-- НАВІГАЦІЯ -->
+
+
             <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a id="studio" class="nav-link" href="./index.html">Студія</a>
+                <ul class="nav__list">
+
+                    <!-- ЕЛЕМЕНТ 1 -->
+
+                    <li class="nav__item">
+                        <a id="studio" class="nav__link" href="./index.html">Студія</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./portdolio.html">Портфоліо</a>
+
+                    <!-- ЕЛЕМЕНТ 2 -->
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="./portdolio.html">Портфоліо</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./">Контакти</a>
+
+                    <!-- ЕЛЕМЕНТ 3 -->
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="./">Контакти</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="contacts-list">
-                <li class="contacts-item">
-                    <a class="contacts-link" href="mailto:info@devstudio.com">
-                        <svg class="contacts-icon" width="16px" height="12px">
+
+
+            <!-- КОНТАКТИ -->
+
+
+            <ul class="contacts__list">
+
+                <!-- ЕЛЕМЕНТ 1 -->
+
+                <li class="contacts__item">
+                    <a class="contacts__link" href="mailto:info@devstudio.com">
+                        <svg class="contacts__icon" width="16px" height="12px">
                             <use href="./icons/symbol-defs.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="contacts-item">
-                    <a class="contacts-link" href="tel:+380961111111">
-                        <svg class="contacts-icon" width="10px" height="16px">
+
+                <!-- ЕЛЕМЕНТ 2 -->
+
+                <li class="contacts__item">
+                    <a class="contacts__link" href="tel:+380961111111">
+                        <svg class="contacts__icon" width="10px" height="16px">
                             <use href="./icons/symbol-defs.svg#icon-phone"></use>
                         </svg>
                         +38 096 111 11 11
                     </a>
                 </li>
             </ul>
+
+
+
         </div>
     </header>
-    <!-- hero - головна частина -->
+
+
+    <!-- ГОЛОВНА ЧАСТИНА САЙТУ - MAIN -->
+
+
     <main>
+
+        <!-- ГОЛОВНА СЕКЦІЯ -->
+
         <section class="hero">
             <div class="container">
-                <!-- Hero -->
-                <h1 class="hero-title">
+                <h1 class="hero__title">
                     Ефективні рішення для вашого бізнесу
                 </h1>
-                <button type="button" class="hero-button" data-modal-open>
+                <button type="button" class="hero__button" data-modal-open>
                     Замовити послугу
                 </button>
             </div>
         </section>
-        <!-- HWW - How We Work -->
+
+
+        <!-- СЕКЦІЯ "ЯК МИ ПРАЦЮЄМО" -->
+
+
         <section class="section">
             <div class="container">
-                <h2 class="hww-title">
+
+                <!-- ЗАГОЛОВОК СЕКЦІЇ -->
+
+                <h2 class="title possibilities__title--display">
                     як ми працюєм
                 </h2>
-                <ul class="hww-list">
+
+                <!-- СПИСОК -->
+
+                <ul class="possibilities__list">
 
                     <!-- ANTENA -->
 
-                    <li class="hww-item" data-aos="fade-up">
+                    <li class="possibilities__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <div class="hww-background">
-                            <svg width="60px" height="60px" class="hww-icon">
+                        <div class="possibilities__background">
+                            <svg width="60px" height="60px" class="possibilities__icon">
                                 <use href="./icons/symbol-defs.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="hww-list-title">
+                        <h3 class="possibilities__title">
                             УВАГА ДО ДЕТАЛЕЙ
                         </h3>
-                        <p class="hww-text">
+                        <p class="possibilities__text">
                             Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                         </p>
                     </li>
 
                     <!-- CLOCK -->
 
-                    <li class="hww-item punctuality" data-aos="fade-up">
+                    <li class="possibilities__item punctuality" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <div class="hww-background">
-                            <svg width="60px" height="60px" class="hww-icon">
+                        <div class="possibilities__background">
+                            <svg width="60px" height="60px" class="possibilities__icon">
                                 <use href="./icons/symbol-defs.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="hww-list-title">
+                        <h3 class="possibilities__title">
                             ПУНКТУАЛЬНІСТЬ
                         </h3>
-                        <p class="hww-text">
+                        <p class="possibilities__text">
                             Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
                         </p>
                     </li>
 
                     <!-- LAPTOPE -->
 
-                    <li class="hww-item planning" data-aos="fade-up">
+                    <li class="possibilities__item planning" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <div class="hww-background">
-                            <svg width="60px" height="60px" class="hww-icon">
+                        <div class="possibilities__background">
+                            <svg width="60px" height="60px" class="possibilities__icon">
                                 <use href="./icons/symbol-defs.svg#icon-laptop"></use>
                             </svg>
                         </div>
-                        <h3 class="hww-list-title">
+                        <h3 class="possibilities__title">
                             ПЛАНУВАННЯ
                         </h3>
-                        <p class="hww-text">
+                        <p class="possibilities__text">
                             Так само консультація з широким активом значною мірою зумовлює.
                         </p>
                     </li>
 
                     <!-- ASTRONAUT -->
 
-                    <li class="hww-item state-of-the-art" data-aos="fade-up">
+                    <li class="possibilities__item state-of-the-art" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <div class="hww-background">
-                            <svg width="60px" height="60px" class="hww-icon">
+                        <div class="possibilities__background">
+                            <svg width="60px" height="60px" class="possibilities__icon">
                                 <use href="./icons/symbol-defs.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="hww-list-title">
+                        <h3 class="possibilities__title">
                             СУЧАСНІ ТЕХНОЛОГІЇ
                         </h3>
-                        <p class="hww-text">
+                        <p class="possibilities__text">
                             Значимість цих проблем настільки очевидна, що реалізація планових завдань.
                         </p>
                     </li>
@@ -160,7 +212,11 @@
             </div>
 
         </section>
-        <!-- WWD - What We Do -->
+
+
+        <!-- СЕКЦІЯ "ЧИМ МИ ЗАЙМАЄМОСЯ" -->
+
+
         <section class="section">
             <div class="container">
 
@@ -172,43 +228,43 @@
 
                 <!-- LIST -->
 
-                <ul class="wwd-list">
+                <ul class="features__list">
 
                     <!-- ITEM N1 -->
 
-                    <li class="wwd-item" data-aos="fade-up">
+                    <li class="features__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <img class="wwd-img" src="./images/keyboard.jpg" alt="зображення клавиатури" width="370">
-                        <p class="wwd-text">
+                        <img class="features__img" src="./images/keyboard.jpg" alt="зображення клавиатури" width="370">
+                        <p class="features__text">
                             десктопні додатки
                         </p>
                     </li>
 
                     <!-- ITEM N2 -->
 
-                    <li class="wwd-item" data-aos="fade-up">
+                    <li class="features__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <img class="wwd-img" src="./images/laptop.jpg" alt="зображення ноутбуку" width="370">
-                        <p class="wwd-text">
+                        <img class="features__img" src="./images/laptop.jpg" alt="зображення ноутбуку" width="370">
+                        <p class="features__text">
                             мобільні додатки
                         </p>
                     </li>
 
                     <!-- ITEM N3 -->
 
-                    <li class="wwd-item" data-aos="fade-up">
+                    <li class="features__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <img class="wwd-img" src="./images/tablet.jpg" alt="зображення планшету" width="370">
-                        <p class="wwd-text">
+                        <img class="features__img" src="./images/tablet.jpg" alt="зображення планшету" width="370">
+                        <p class="features__text">
                             дизайнерські рішення
                         </p>
                     </li>
@@ -219,9 +275,11 @@
 
         </section>
 
-        <!--OT - Our Team -->
 
-        <section class="section section-ot">
+        <!-- СЕКЦІЯ "НАША КОМАНДА" -->
+
+
+        <section class="section section__team">
 
             <div class="container">
 
@@ -233,30 +291,32 @@
 
                 <!-- LIST -->
 
-                <ul class="ot-list">
+                <ul class="team__list">
 
                     <!-- ITEM N1 -->
 
-                    <li class="ot-item" data-aos="fade-up">
+                    <li class="team__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <img class="ot-img" src="./images/product-designer.jpg" alt="зображеня чоловіка" width="270">
-                        <div class="container-ot-text">
-                            <h3 class="ot-text">
+                        <img class="team__img" src="./images/product-designer.jpg" alt="зображеня чоловіка" width="270">
+                        <div class="team__container">
+                            <h3 class="team__name">
                                 Ігор Дем'яненко
                             </h3>
-                            <p class="ot-title">
+                            <p class="team__text">
                                 Product Designer
                             </p>
-                            <ul class="ot-filter-list">
+
+
+                            <ul class="buttons__list">
 
                                 <!-- 1 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-instagram"> </use>
                                         </svg>
                                     </a>
@@ -264,9 +324,9 @@
 
                                 <!-- 2 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-twitter"> </use>
                                         </svg>
                                     </a>
@@ -274,9 +334,9 @@
 
                                 <!-- 3 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-facebook"> </use>
                                         </svg>
                                     </a>
@@ -284,9 +344,9 @@
 
                                 <!-- 4 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-linkedin"> </use>
                                         </svg>
                                     </a>
@@ -297,26 +357,28 @@
 
                     <!-- ITEM N2 -->
 
-                    <li class="ot-item" data-aos="fade-up">
+                    <li class="team__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <img class="" src="./images/frontend-developer.jpg" alt="зображеня жінки" width="270">
-                        <div class="container-ot-text">
-                            <h3 class="ot-text">
+                        <img class="team__img" src="./images/frontend-developer.jpg" alt="зображеня жінки" width="270">
+                        <div class="team__container">
+                            <h3 class="team__name">
                                 Ольга Рєпіна
                             </h3>
-                            <p class="ot-title">
+                            <p class="team__text">
                                 Frontend Developer
                             </p>
-                            <ul class="ot-filter-list">
+
+
+                            <ul class="buttons__list">
 
                                 <!-- 1 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-instagram"> </use>
                                         </svg>
                                     </a>
@@ -324,9 +386,9 @@
 
                                 <!-- 2 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-twitter"> </use>
                                         </svg>
                                     </a>
@@ -334,9 +396,9 @@
 
                                 <!-- 3 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-facebook"> </use>
                                         </svg>
                                     </a>
@@ -344,9 +406,9 @@
 
                                 <!-- 4 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-linkedin"> </use>
                                         </svg>
                                     </a>
@@ -357,22 +419,22 @@
 
                     <!-- ITEM N3 -->
 
-                    <li class="ot-item" data-aos="fade-up">
-                        <img class="" src="./images/marketing.jpg" alt="зображеня чоловіка" width="270">
-                        <div class="container-ot-text">
-                            <h3 class="ot-text">
+                    <li class="team__item" data-aos="fade-up">
+                        <img class="team__img" src="./images/marketing.jpg" alt="зображеня чоловіка" width="270">
+                        <div class="team__container">
+                            <h3 class="team__name">
                                 Микола Тарасов
                             </h3>
-                            <p class="ot-title">
+                            <p class="team__text">
                                 Marketing
                             </p>
-                            <ul class="ot-filter-list">
+                            <ul class="buttons__list">
 
                                 <!-- 1 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-instagram"> </use>
                                         </svg>
                                     </a>
@@ -380,9 +442,9 @@
 
                                 <!-- 2 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-twitter"> </use>
                                         </svg>
                                     </a>
@@ -390,9 +452,9 @@
 
                                 <!-- 3 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-facebook"> </use>
                                         </svg>
                                     </a>
@@ -400,9 +462,9 @@
 
                                 <!-- 4 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-linkedin"> </use>
                                         </svg>
                                     </a>
@@ -413,26 +475,26 @@
 
                     <!-- ITEM N4 -->
 
-                    <li class="ot-item" data-aos="fade-up">
+                    <li class="team__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <img class="" src="./images/ul-designer.jpg" alt="зображеня чоловіка" width="270">
-                        <div class="container-ot-text">
-                            <h3 class="ot-text">
+                        <img class="team__img" src="./images/ul-designer.jpg" alt="зображеня чоловіка" width="270">
+                        <div class="team__container">
+                            <h3 class="team__name">
                                 Михайло Єрмаков
                             </h3>
-                            <p class="ot-title">
+                            <p class="team__text">
                                 UI Designer
                             </p>
-                            <ul class="ot-filter-list">
+                            <ul class="buttons__list">
 
                                 <!-- 1 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-instagram"> </use>
                                         </svg>
                                     </a>
@@ -440,9 +502,9 @@
 
                                 <!-- 2 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-twitter"> </use>
                                         </svg>
                                     </a>
@@ -450,9 +512,9 @@
 
                                 <!-- 3 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-facebook"> </use>
                                         </svg>
                                     </a>
@@ -460,9 +522,9 @@
 
                                 <!-- 4 -->
 
-                                <li class="ot-filter-item">
-                                    <a class="ot-filter-link" href="">
-                                        <svg class="ot-filter-image">
+                                <li class="buttons__item">
+                                    <a class="buttons__link" href="">
+                                        <svg class="buttons__image">
                                             <use href="./icons/symbol-defs.svg#icon-linkedin"> </use>
                                         </svg>
                                     </a>
@@ -473,7 +535,11 @@
                 </ul>
             </div>
         </section>
+
+
         <!-- RC - Regular customers  -->
+
+
         <section class="section">
             <div class="container">
                 <h2 class="title">
