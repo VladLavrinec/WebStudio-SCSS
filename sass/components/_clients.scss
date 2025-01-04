@@ -9,13 +9,10 @@
         width: 170px;
         height: 92px;
         flex-basis: calc((100% - 5 * 30px) / 6);
-        display: flex;
-        justify-content: center;
-        align-items: center;
         transition-property: border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+        @extend %flex;
 
         .clients__image {
             fill: $color-border-rc;
