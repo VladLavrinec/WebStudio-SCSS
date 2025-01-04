@@ -18,277 +18,378 @@
 </head>
 
 <body>
-    <!-- шапка сайту -->
+
+
+    <!-- ШАПКА САЙТУ -->
+
+
     <header class="header">
-        <div class="container section-header">
+        <div class="container container__header">
+
+
+            <!-- ЛОГОТИП -->
+
+
             <a class="logo" href="./"><span class="web">Web</span><span class="studio">Studio</span> </a>
-            <!-- меню навігацій -->
+
+
+            <!-- НАВІГАЦІЯ -->
+
+
             <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Студія</a>
+                <ul class="nav__list">
+
+                    <!-- ЕЛЕМЕНТ 1 -->
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="./index.html">Студія</a>
                     </li>
-                    <li class="nav-item">
-                        <a id="portfolio" class="nav-link" href="./portfolio.html">Портфоліо</a>
+
+                    <!-- ЕЛЕМЕНТ 2 -->
+
+                    <li class="nav__item">
+                        <a id="portfolio" class="nav__link" href="./portdolio.html">Портфоліо</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./">Контакти</a>
+
+                    <!-- ЕЛЕМЕНТ 3 -->
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="./">Контакти</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="contacts-list">
-                <li class="contacts-item">
-                    <a class="contacts-link" href="mailto:info@devstudio.com">
-                        <svg class="contacts-icon" width="16px" height="12px">
+
+
+            <!-- КОНТАКТИ -->
+
+
+            <ul class="contacts__list">
+
+                <!-- ЕЛЕМЕНТ 1 -->
+
+                <li class="contacts__item">
+                    <a class="contacts__link" href="mailto:info@devstudio.com">
+                        <svg class="contacts__icon" width="16px" height="12px">
                             <use href="./icons/symbol-defs.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="contacts-item">
-                    <a class="contacts-link" href="tel:+380961111111">
-                        <svg class="contacts-icon" width="10px" height="16px">
+
+                <!-- ЕЛЕМЕНТ 2 -->
+
+                <li class="contacts__item">
+                    <a class="contacts__link" href="tel:+380961111111">
+                        <svg class="contacts__icon" width="10px" height="16px">
                             <use href="./icons/symbol-defs.svg#icon-phone"></use>
                         </svg>
                         +38 096 111 11 11
                     </a>
                 </li>
             </ul>
+
+
+
         </div>
     </header>
-    <!-- головна частина -->
+
+
+    <!-- ГОЛОВНА ЧАСТИНА САЙТУ - MAIN -->
+
     <main>
-        <!-- gallery -->
+
+
+        <!-- ГАЛЕРЕЯ -->
+
+
         <section class="gallery">
 
             <div class="container">
-                <h2 class="filter-tittle">
+
+
+                <!-- ЗАГОЛОВОК -->
+
+                <h2 class="filter__tittle">
                     наші проекти
                 </h2>
 
-                <ul class="filter-list">
-                    <li class="filter-item">
-                        <button class="filter-button" type="submit">
+
+                <!-- ФІЛЬТЕР -->
+
+
+                <ul class="filter__list">
+
+
+                    <!-- КНОПКА 1 -->
+
+                    <li class="filter__item">
+                        <button class="filter__button" type="submit">
                             усі
                         </button>
                     </li>
 
-                    <li class="filter-item">
-                        <button class="filter-button" type="submit">
+                    <!-- КНОПКА 2 -->
+
+                    <li class="filter__item">
+                        <button class="filter__button" type="submit">
                             Веб-сайти
                         </button>
                     </li>
 
-                    <li class="filter-item">
-                        <button class="filter-button" type="submit">
+                    <!-- КНОПКА 3 -->
+
+                    <li class="filter__item">
+                        <button class="filter__button" type="submit">
                             Додатки
                         </button>
                     </li>
 
-                    <li class="filter-item">
-                        <button class="filter-button" type="submit">
+                    <!-- КНОПКА 4 -->
+
+                    <li class="filter__item">
+                        <button class="filter__button" type="submit">
                             Дизайн
                         </button>
                     </li>
 
-                    <li class="filter-item">
-                        <button class="filter-button" type="submit">
+                    <!-- КНОПКА 5 -->
+
+                    <li class="filter__item">
+                        <button class="filter__button" type="submit">
                             Маркетинг
                         </button>
                     </li>
                 </ul>
             </div>
 
+
+            <!-- ГАЛЕРЕЯ -->
+
+
             <div class="container">
-                <h2 class="portfolio-tittle">
+
+
+                <!-- ЗАГОЛОВОК -->
+
+
+                <h2 class="portfolio__title">
                     Фільтр
                 </h2>
 
-                <!-- 1 -->
-                <ul class="hero-portfolio-list">
-                    <li class="hero-portfolio-item" data-aos="fade-up">
+
+                <!-- СПИСКО -->
+
+
+                <ul class="gallery__list">
+
+
+                    <!-- ЕЛЕМЕНТ 1 -->
+
+                    <li class="gallery__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <div class="hero-portfolio-img-container">
-                            <img class="hero-portfolio-item-img" src="./images/tehnoryk.jpg" alt="Технокряк">
-                            <p class="hero-portfolio-img-text">
+                        <div class="window__container">
+                            <img class="window__img" src="./images/tehnoryk.jpg" alt="Технокряк">
+                            <p class="window__text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
-                        <h3 class="hero-portfolio-item-tittle">
+                        <h3 class="gallery__title">
                             Технокряк
                         </h3>
 
-                        <p class="hero-portfolio-item-text">
+                        <p class="gallery__text">
                             Веб-сайт
                         </p>
                     </li>
-                    <!-- 2 -->
-                    <li class="hero-portfolio-item" data-aos="fade-up">
+
+
+                    <!-- ЕЛЕМЕНТ 2 -->
+
+                    <li class="gallery__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <div class="hero-portfolio-img-container">
-                            <img class="hero-portfolio-item-img" src="./images/newotleanvsgoldenstar.jpg"
+                        <div class="window__container">
+                            <img class="window__img" src="./images/newotleanvsgoldenstar.jpg"
                                 alt="Постер New Orlean vs Golden Star">
-                            <p class="hero-portfolio-img-text">
+                            <p class="window__text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
-                        <h3 class="hero-portfolio-item-tittle">
+                        <h3 class="gallery__title">
                             Постер New Orlean vs Golden Star
                         </h3>
 
-                        <p class="hero-portfolio-item-text">
+                        <p class="gallery__text">
                             Дизайн
                         </p>
                     </li>
-                    <!-- 3 -->
-                    <li class="hero-portfolio-item" data-aos="fade-up">
+
+
+                    <!-- ЕЛЕМЕНТ 3 -->
+
+                    <li class="gallery__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <div class="hero-portfolio-img-container">
-                            <img class="hero-portfolio-item-img" src="./images/seafood.jpg" alt="Ресторан Seafood">
-                            <p class="hero-portfolio-img-text">
+                        <div class="window__container">
+                            <img class="window__img" src="./images/seafood.jpg" alt="Ресторан Seafood">
+                            <p class="window__text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
-                        <h3 class="hero-portfolio-item-tittle">
+                        <h3 class="gallery__title">
                             Ресторан Seafood
                         </h3>
 
-                        <p class="hero-portfolio-item-text">
+                        <p class="gallery__text">
                             Додаток
                         </p>
                     </li>
-                    <!-- 4 -->
-                    <li class="hero-portfolio-item" data-aos="fade-up">
+
+
+                    <!-- ЕЛЕМЕНТ 4 -->
+
+                    <li class="gallery__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <div class="hero-portfolio-img-container">
-                            <img class="hero-portfolio-item-img" src="./images/projectprime.jpg" alt="Проєкт Prime">
-                            <p class="hero-portfolio-img-text">
+                        <div class="window__container">
+                            <img class="window__img" src="./images/projectprime.jpg" alt="Проєкт Prime">
+                            <p class="window__text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
-                        <h3 class="hero-portfolio-item-tittle">
+                        <h3 class="gallery__title">
                             Проєкт Prime
                         </h3>
-                        <p class="hero-portfolio-item-text">
+                        <p class="gallery__text">
                             Маркетинг
                         </p>
                     </li>
-                    <!-- 5 -->
-                    <li class="hero-portfolio-item" data-aos="fade-up">
+
+
+                    <!-- ЕЛЕМЕНТ 5 -->
+
+                    <li class="gallery__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <div class="hero-portfolio-img-container">
-                            <img class="hero-portfolio-item-img" src="./images/projectboxes.jpg" alt="Проєкт Boxes">
-                            <p class="hero-portfolio-img-text">
+                        <div class="window__container">
+                            <img class="window__img" src="./images/projectboxes.jpg" alt="Проєкт Boxes">
+                            <p class="window__text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
-                        <h3 class="hero-portfolio-item-tittle">
+                        <h3 class="gallery__title">
                             Проєкт Boxes
                         </h3>
-                        <p class="hero-portfolio-item-text">
+                        <p class="gallery__text">
                             Додаток
                         </p>
                     </li>
-                    <!-- 6 -->
-                    <li class="hero-portfolio-item" data-aos="fade-up">
+
+
+                    <!-- ЕЛМЕНТ 6 -->
+
+                    <li class="gallery__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <div class="hero-portfolio-img-container">
-                            <img class="hero-portfolio-item-img" src="./images/Inspirationhasnoborders.jpg"
+                        <div class="window__container">
+                            <img class="window__img" src="./images/Inspirationhasnoborders.jpg"
                                 alt="Inspiration has no Borders">
-                            <p class="hero-portfolio-img-text">
+                            <p class="window__text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
-                        <h3 class="hero-portfolio-item-tittle">
+                        <h3 class="gallery__title">
                             Inspiration has no Borders
                         </h3>
-                        <p class="hero-portfolio-item-text">
+                        <p class="gallery__text">
                             Веб-сайт
                         </p>
                     </li>
-                    <!-- 7 -->
-                    <li class="hero-portfolio-item" data-aos="fade-up">
+
+
+                    <!-- ЕЛЕМЕНТ 7 -->
+
+                    <li class="gallery__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <div class="hero-portfolio-img-container">
-                            <img class="hero-portfolio-item-img" src="./images/limitededition.jpg"
-                                alt="Видання Limited Edition">
-                            <p class="hero-portfolio-img-text">
+                        <div class="window__container">
+                            <img class="window__img" src="./images/limitededition.jpg" alt="Видання Limited Edition">
+                            <p class="window__text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
-                        <h3 class="hero-portfolio-item-tittle">
+                        <h3 class="gallery__title">
                             Видання Limited Edition
                         </h3>
-                        <p class="hero-portfolio-item-text">
+                        <p class="gallery__text">
                             Дизайн
                         </p>
                     </li>
-                    <!-- 8 -->
-                    <li class="hero-portfolio-item" data-aos="fade-up">
+
+
+                    <!-- ЕЛЕМЕНТ 8 -->
+
+                    <li class="gallery__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <div class="hero-portfolio-img-container">
-                            <img class="hero-portfolio-item-img" src="./images/lab.jpg" alt="Проєкт LAB">
-                            <p class="hero-portfolio-img-text">
+                        <div class="window__container">
+                            <img class="window__img" src="./images/lab.jpg" alt="Проєкт LAB">
+                            <p class="window__text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
-                        <h3 class="hero-portfolio-item-tittle">
+                        <h3 class="gallery__title">
                             Проєкт LAB
                         </h3>
-                        <p class="hero-portfolio-item-text">
+                        <p class="gallery__text">
                             Маркетинг
                         </p>
                     </li>
-                    <!-- 9 -->
-                    <li class="hero-portfolio-item" data-aos="fade-up">
+
+
+                    <!-- ЕЛМЕНТ 9 -->
+
+                    <li class="gallery__item" data-aos="fade-up">
                         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                         <script>
                             AOS.init();
                         </script>
-                        <div class="hero-portfolio-img-container">
-                            <img class="hero-portfolio-item-img" src="./images/growingbusiness.jpg"
-                                alt="Growing Business">
-                            <p class="hero-portfolio-img-text">
+                        <div class="window__container">
+                            <img class="window__img" src="./images/growingbusiness.jpg" alt="Growing Business">
+                            <p class="window__text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
-                        <h3 class="hero-portfolio-item-tittle">
+                        <h3 class="gallery__title">
                             Growing Business
                         </h3>
-                        <p class="hero-portfolio-item-text">
+                        <p class="gallery__text">
                             Додаток
                         </p>
                     </li>
@@ -300,62 +401,106 @@
 
 
     </main>
-    <!-- підвал сайту -->
-    <!-- підвал сайту -->
+
+
+    <!-- ПІДВАЛ САЙТУ -->
+
+
     <footer class="footer">
-        <div class="container footer-position">
-            <div class="footer-part">
+        <div class="container footer__position">
+
+
+            <!-- ЧАСТИНА 1 -->
+
+            <div class="footer__part">
+
+
+                <!-- ЛОГОТИП -->
+
                 <a class="logo" href="./"><span class="web">Web</span><span class="footer-studio">Studio</span></a>
-                <address class="footer-hero">
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
+
+
+                <!-- ГОЛОВНА ЧАСТИНА ПІДВАЛУ -->
+
+                <address class="hero__footer">
+
+
+                    <!-- СПИСОК -->
+
+                    <ul class="footer__list">
+
+                        <!-- ЕЛЕМЕНТ 1 -->
+
+                        <li class="footer__item">
+                            <p class="footer__text">м. Київ, пр-т Лесі Українки, 26</p>
                         </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+
+                        <!-- ЕЛМЕНТ 2 -->
+
+                        <li class="footer__item">
+                            <a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
+
+                        <!-- ЕЛЕМЕНТ 3 -->
+
+                        <li class="footer__item">
+                            <a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
 
-            <!-- 2 -->
+            <!-- ЧАСТИНА 2 -->
 
-            <div class="footer-part">
-                <h3 class="footer-title">
+            <div class="footer__part">
+
+
+                <!-- ЗАГОЛОВОК -->
+
+                <h3 class="footer__title">
                     приєднуйтесь
                 </h3>
-                <ul class="follow-list">
-                    <!-- 1 -->
-                    <li class="follow-item">
-                        <a class="follow-link" href="./">
-                            <svg class="follow-image">
+
+
+                <!-- СПИСОК -->
+
+                <ul class="follow__list">
+
+                    <!-- ЕЛЕМЕНТ 1 -->
+
+                    <li class="follow__item">
+                        <a class="follow__link" href="./">
+                            <svg class="follow__image">
                                 <use href="./icons/symbol-defs.svg#icon-instagram"> </use>
                             </svg>
                         </a>
                     </li>
-                    <!-- 2 -->
-                    <li class="follow-item">
-                        <a class="follow-link" href="./">
-                            <svg class="follow-image">
+
+                    <!-- ЕЛМЕНТ 2 -->
+
+                    <li class="follow__item">
+                        <a class="follow__link" href="./">
+                            <svg class="follow__image">
                                 <use href="./icons/symbol-defs.svg#icon-twitter"> </use>
                             </svg>
                         </a>
                     </li>
-                    <!-- 3 -->
-                    <li class="follow-item">
-                        <a class="follow-link" href="./">
-                            <svg class="follow-image">
+
+                    <!-- ЕЛМЕНТ 3 -->
+
+                    <li class="follow__item">
+                        <a class="follow__link" href="./">
+                            <svg class="follow__image">
                                 <use href="./icons/symbol-defs.svg#icon-facebook"> </use>
                             </svg>
                         </a>
                     </li>
-                    <!-- 4 -->
-                    <li class="follow-item">
-                        <a class="follow-link" href="./">
-                            <svg class="follow-image">
+
+                    <!-- ЕЛМЕНТ 4 -->
+
+                    <li class="follow__item">
+                        <a class="follow__link" href="./">
+                            <svg class="follow__image">
                                 <use href="./icons/symbol-defs.svg#icon-linkedin"> </use>
                             </svg>
                         </a>
@@ -363,19 +508,21 @@
                 </ul>
             </div>
 
-            <!-- 3 -->
 
-            <div class="footer-part footer-part-3">
+            <!-- ЧАСТИНА 3 -->
+
+
+            <div class="footer__part">
                 <form autocomplete="on">
-                    <label for="email" class="label-footer">Підпишіться на розсилку</label>
-                    <div class="input-footer-container">
-                        <input type="text" id="email" class="input-footer" placeholder="E-mail">
+                    <label for="email" class="footer__label">Підпишіться на розсилку</label>
+                    <div class="input__container--btn">
+                        <input type="text" id="email" class="footer__input" placeholder="E-mail">
                     </div>
                 </form>
 
-                <button type="button" class="footer-follow-btn">
+                <button type="button" class="footer__button">
                     Підписатися
-                    <svg class="footer-follow-btn-icon">
+                    <svg class="footer__icon">
                         <use href="./icons/symbol-defs.svg#icon-telegram"></use>
                     </svg>
                 </button>

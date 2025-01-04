@@ -5,29 +5,29 @@
     padding: 60px 0;
 }
 
-.footer-position {
+.footer__position {
     display: flex;
 
 }
 
-.footer-part:first-child {
+.footer__part:first-child {
     margin-right: 70px;
 }
 
 
-.footer-hero {
+.hero__footer {
     font-style: normal;
     display: flex;
 }
 
-.footer-text {
+.footer__text {
     color: $color-light;
     font-family: $font-family;
     font-weight: 400;
     line-height: 1.71;
 }
 
-.footer-link {
+.footer__link {
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -39,11 +39,11 @@
 
 // ===========================================================
 
-.footer-part:nth-child(2) {
+.footer__part:nth-child(2) {
     margin-top: 12px;
 }
 
-.footer-title {
+.footer__title {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -51,18 +51,18 @@
     color: $color-light;
 }
 
-.follow-list {
+.follow__list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 10px;
     margin-top: 20px;
 }
 
-.follow-item {
+.follow__item {
     flex-basis: calc((100% - 3 * 10x) / 4);
 }
 
-.follow-link {
+.follow__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,11 +75,11 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.follow-link:hover {
+.follow__link:hover {
     background-color: $color-font-active;
 }
 
-.follow-image {
+.follow__image {
     fill: $color-background-light;
     width: 20px;
     height: 20px;
@@ -93,13 +93,13 @@
 
 // ===========================================================
 
-.footer-part-3 {
+.footer__part:nth-child(3) {
     display: flex;
     margin-left: 93px;
     margin-top: 12px;
 }
 
-.label-footer {
+.footer__label {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -107,7 +107,7 @@
     color: $color-light;
 }
 
-.input-footer {
+.footer__input {
     margin-top: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -118,7 +118,7 @@
     padding: 15px;
 }
 
-.footer-follow-btn {
+.footer__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +138,7 @@
     background-color: $color-font-active;
 }
 
-.footer-follow-btn-icon {
+.footer__icon {
     margin-left: 12px;
     width: 24px;
     height: 24px;
