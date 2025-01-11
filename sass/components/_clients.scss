@@ -9,16 +9,12 @@
         width: 170px;
         height: 92px;
         flex-basis: calc((100% - 5 * 30px) / 6);
-        transition-property: border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include tansition(border);
         @extend %flex;
 
         .clients__image {
             fill: $color-border-rc;
-            transition-property: fill;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include tansition(fill);
         }
     }
 

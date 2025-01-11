@@ -27,14 +27,12 @@
             position: absolute;
             top: 8px;
             right: 8px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             width: 30px;
             height: 30px;
             background-color: $color-footer-link;
             border-radius: 100%;
             border: 1px solid rgba(0, 0, 0, 0.1);
+            @extend %flex;
         }
 
         .close__icon {

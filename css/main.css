@@ -1,4 +1,4 @@
-.clients__list .clients__item {
+.footer__button, .follow__link, .filter__list, .clients__list .clients__item, .section.section__team .team__list .buttons__link, .section .possibilities__list .possibilities__background, .backdrop .modal .close__button, .header .container__header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,10 +75,6 @@ body {
   padding: 25px 0;
   border-bottom: 1px solid #eee;
 }
-.header .container__header {
-  display: flex;
-  align-items: center;
-}
 .header .container__header .nav {
   margin-left: 93px;
 }
@@ -94,7 +90,6 @@ body {
 }
 .header .container__header .nav__link {
   color: #000000;
-  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -111,7 +106,6 @@ body {
   width: 100%;
   height: 4px;
   background-color: #2196F3;
-  transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
@@ -161,7 +155,6 @@ body {
   display: flex;
   align-items: center;
   color: #757575;
-  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -267,9 +260,6 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 30px;
   height: 30px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -430,9 +420,6 @@ body {
   background-color: #F5F4FA;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .section .possibilities__list .possibilities__title {
   color: #212121;
@@ -506,9 +493,6 @@ body {
   margin: 0 auto;
 }
 .section.section__team .team__list .buttons__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -551,13 +535,11 @@ body {
   width: 170px;
   height: 92px;
   flex-basis: calc((100% - 150px) / 6);
-  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__list .clients__item .clients__image {
   fill: #afb1b8;
-  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -578,8 +560,6 @@ body {
 
 .filter__list {
   margin-bottom: 34px;
-  display: flex;
-  justify-content: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
 }
@@ -594,7 +574,6 @@ body {
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
-  transition-property: background-color color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -627,7 +606,6 @@ body {
 .gallery__item {
   outline: 1px solid #eee;
   flex-basis: calc((100% - 60px) / 3);
-  transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -660,7 +638,6 @@ body {
   width: 100%;
   height: 100%;
   transform: translate(0, 100%);
-  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -741,14 +718,10 @@ body {
 }
 
 .follow__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50px;
-  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -789,9 +762,6 @@ body {
 }
 
 .footer__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 44px;
   margin-left: 12px;
   border: none;

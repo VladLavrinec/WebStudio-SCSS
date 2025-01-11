@@ -25,9 +25,7 @@
             background-color: $color-background-light;
             background-repeat: no-repeat;
             background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex;
         }
 
         .possibilities__title {

@@ -63,16 +63,12 @@
 }
 
 .follow__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 44px;
     height: 44px;
     background-color: $color-footer-link;
     border-radius: 50px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include tansition(background-color);
+    @extend %flex;
 }
 
 .follow__link:hover {
@@ -119,9 +115,6 @@
 }
 
 .footer__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 44px;
     margin-left: 12px;
     border: none;
@@ -136,6 +129,7 @@
     text-align: center;
     color: $color-light;
     background-color: $color-font-active;
+    @extend %flex;
 }
 
 .footer__icon {

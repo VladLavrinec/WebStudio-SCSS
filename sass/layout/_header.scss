@@ -3,8 +3,7 @@
     border-bottom: 1px solid $color-border;
 
     .container__header {
-        display: flex;
-        align-items: center;
+        @extend %flex;
 
 
         .nav {
@@ -24,9 +23,7 @@
 
         .nav__link {
             color: $color-dark;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include tansition(color);
         }
 
         .nav__link:focus,
@@ -43,9 +40,8 @@
             width: 100%;
             height: 4px;
             background-color: $color-font-active;
-            transition-property: opacity;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include tansition(opacity);
+            ;
             opacity: 0;
         }
 
@@ -104,9 +100,7 @@
             display: flex;
             align-items: center;
             color: $color-font-text;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include tansition(color);
         }
 
         .contacts__link:focus,
