@@ -1,5 +1,9 @@
 .section {
-    padding: 94px 0;
+    padding: 60px 0 30px;
+
+    @media screen and (min-width:1200px) {
+        padding: 94px 0;
+    }
 
     .possibilities__title--display {
         display: none;
@@ -9,35 +13,66 @@
     .possibilities__list {
         background-color: $color-light;
         display: flex;
+        flex-wrap: wrap;
         column-gap: 30px;
 
         .possibilities__item {
             display: flex;
             flex-wrap: wrap;
             flex-basis: calc((100% - 3 * 30px) / 4);
+            margin-bottom: 30px;
         }
 
         .possibilities__background {
-            width: 270px;
+            border-radius: 4px;
+            width: 450px;
             height: 120px;
             margin-bottom: 30px;
-            border-radius: 4px;
+
             background-color: $color-background-light;
             background-repeat: no-repeat;
             background-position: center;
             @extend %flex;
+
+            @media screen and (min-width:768px) {
+                width: 354px;
+                height: 120px;
+            }
+
+            @media screen and (min-width:1200px) {
+                width: 270px;
+            }
+
         }
 
         .possibilities__title {
             color: $color-font-title;
             font-family: $font-family;
             font-weight: 700;
+            margin: 0 auto;
+
+            @media screen and (min-width:768px) {
+                margin: 0;
+                height: 16px;
+            }
         }
 
         .possibilities__text {
+            margin-top: 10px;
             color: $color-font-text;
             font-family: $font-family;
-            font-weight: 700;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            width: 450px;
+
+            @media screen and (min-width:768px) {
+                width: 354px;
+            }
+
+            @media screen and (min-width:1200px) {
+                width: 270px;
+            }
         }
     }
 }

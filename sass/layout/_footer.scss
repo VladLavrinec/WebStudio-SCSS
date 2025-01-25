@@ -7,24 +7,77 @@
 
 .footer__position {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 60px;
 
+
+    @media screen and (min-width:480px) and (max-width:768px) {
+        column-gap: 165px;
+    }
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        align-items: normal;
+    }
+
+    @media screen and (min-width:1200px) {
+        flex-wrap: nowrap;
+    }
 }
 
-.footer__part:first-child {
-    margin-right: 70px;
-}
+.footer__part {
+    flex-basis: calc((100% - 165px) / 2);
 
+    @media screen and (min-width:1200px) {
+        flex-basis: calc((100% - 2 * 70px) / 3);
+    }
+}
 
 .hero__footer {
     font-style: normal;
     display: flex;
+
+    @media screen and (min-width:768px) {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        justify-content: left;
+    }
 }
+
+.footer__logo {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 12px;
+
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    }
+}
+
+.footer__list {
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    }
+}
+
+
 
 .footer__text {
     color: $color-light;
     font-family: $font-family;
     font-weight: 400;
     line-height: 1.71;
+    text-align: center;
+    margin-top: 8px;
 }
 
 .footer__link {
@@ -40,7 +93,7 @@
 // ===========================================================
 
 .footer__part:nth-child(2) {
-    margin-top: 12px;
+    // margin-top: 12px;
 }
 
 .footer__title {
@@ -49,6 +102,12 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $color-light;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    }
 }
 
 .follow__list {
@@ -56,6 +115,16 @@
     flex-wrap: wrap;
     column-gap: 10px;
     margin-top: 20px;
+
+    @media screen and (min-width:768px) {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        justify-content: left;
+        flex-wrap: nowrap;
+    }
 }
 
 .follow__item {
@@ -91,8 +160,19 @@
 
 .footer__part:nth-child(3) {
     display: flex;
-    margin-left: 93px;
-    margin-top: 12px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width:768px) {
+        display: block;
+    }
+}
+
+.input__container--btn {
+    display: flex;
+
+    @media screen and (min-width:480px) and (max-width:768px) {
+        display: block;
+    }
 }
 
 .footer__label {
@@ -101,22 +181,33 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $color-light;
+    display: block;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    }
 }
 
 .footer__input {
     margin-top: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    width: 358px;
+    width: 450px;
     height: 50px;
     background-color: rgba(255, 255, 255, 0);
     color: rgba(255, 255, 255, 0.6);
     padding: 15px;
+
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
 }
 
 .footer__button {
-    margin-top: 44px;
-    margin-left: 12px;
+    margin: 0 auto;
+    margin-top: 20px;
     border: none;
     border-radius: 4px;
     width: 200px;
@@ -130,6 +221,10 @@
     color: $color-light;
     background-color: $color-font-active;
     @extend %flex;
+
+    @media screen and (min-width:1200px) {
+        margin-left: 12px;
+    }
 }
 
 .footer__icon {

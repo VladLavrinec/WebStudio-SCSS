@@ -1,3 +1,21 @@
+.features__section {
+    display: none;
+    padding-top: 0;
+
+    @media screen and (min-width:1200px) {
+        display: block;
+    }
+}
+
+
+.features__title {
+    display: none;
+
+    @media screen and (min-width:1200px) {
+        display: block;
+    }
+}
+
 .features__list {
     display: flex;
     column-gap: 30px;

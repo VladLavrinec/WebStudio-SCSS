@@ -1,16 +1,26 @@
 .clients__list {
     display: flex;
-    column-gap: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
 
 
     .clients__item {
         border: 1px solid $color-border-rc;
         border-radius: 4px;
-        width: 170px;
         height: 92px;
-        flex-basis: calc((100% - 5 * 30px) / 6);
+        flex-basis: calc((100% - 30px) / 2);
         @include tansition(border);
         @extend %flex;
+
+        @media screen and (min-width:768px) {
+            flex-basis: calc((100% - 2 * 30px) / 3);
+        }
+
+        @media screen and (min-width:1200px) {
+            flex-basis: calc((100% - 5 * 30px) / 6);
+        }
+
+
 
         .clients__image {
             fill: $color-border-rc;
