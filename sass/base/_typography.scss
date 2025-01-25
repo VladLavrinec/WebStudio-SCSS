@@ -13,7 +13,10 @@ body {
     @media screen and (min-width:1200px) {
         min-width: 1200px;
     }
+
 }
+
+// ЛОГО
 
 .logo {
     color: $color-font-active;
@@ -34,6 +37,8 @@ body {
 .footer-studio {
     color: $color-background-light;
 }
+
+// ЗАГОЛОВОК
 
 .title {
     margin-bottom: 30px;
