@@ -243,7 +243,7 @@ body {
 
 .hero {
   background-color: #2F303A;
-  background-image: url(../images/owetlay.png), url(../images/mobil-hero-bg.jpg);
+  background-image: url(/images/owetlay.png), url(/images/mobil-hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 118px 0;
@@ -252,12 +252,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../images/owetlay.png), url(../images/tablet_hero_bgi.jpg);
+    background-image: url(/images/owetlay.png), url(/images/tablet_hero_bgi.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/owetlay.png), url(../images/backgroun-img.jpg);
+    background-image: url(/images/owetlay.png), url(/images/backgroun-img.jpg);
     padding: 200px 0;
   }
 }

@@ -1,6 +1,6 @@
 .hero {
     background-color: $color-background-dark;
-    background-image: url(../images/owetlay.png), url(../images/mobil-hero-bg.jpg);
+    background-image: url(/images/owetlay.png), url(/images/mobil-hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 118px 0;
@@ -8,11 +8,11 @@
     margin: 0 auto;
 
     @media screen and (min-width:768px) {
-        background-image: url(../images/owetlay.png), url(../images/tablet_hero_bgi.jpg);
+        background-image: url(/images/owetlay.png), url(/images/tablet_hero_bgi.jpg);
     }
 
     @media screen and (min-width:1200px) {
-        background-image: url(../images/owetlay.png), url(../images/backgroun-img.jpg);
+        background-image: url(/images/owetlay.png), url(/images/backgroun-img.jpg);
         padding: 200px 0;
     }
 }
