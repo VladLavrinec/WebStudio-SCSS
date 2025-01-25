@@ -8,11 +8,11 @@
     margin: 0 auto;
 
     @media screen and (min-width:768px) {
-        background-image: url(/images/tablet-hero-bgi.jpg);
+        background-image: url(/images/owetlay.png), url(/images/tablet_hero_bgi.jpg);
     }
 
     @media screen and (min-width:1200px) {
-        background-image: url(/images/mobil-hero-bg.jpg);
+        background-image: url(/images/owetlay.png), url(/images/backgroun-img.jpg);
         padding: 200px 0;
     }
 }
