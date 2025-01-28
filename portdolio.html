@@ -186,10 +186,6 @@
                     <!-- ЕЛЕМЕНТ 1 -->
 
                     <li class="gallery__item" data-aos="fade-up">
-                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                        <script>
-                            AOS.init();
-                        </script>
                         <div class="window__container">
                             <img class="window__img" src="./images/tehnoryk.jpg" alt="Технокряк">
                             <p class="window__text">
@@ -210,10 +206,6 @@
                     <!-- ЕЛЕМЕНТ 2 -->
 
                     <li class="gallery__item" data-aos="fade-up">
-                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                        <script>
-                            AOS.init();
-                        </script>
                         <div class="window__container">
                             <img class="window__img" src="./images/newotleanvsgoldenstar.jpg"
                                 alt="Постер New Orlean vs Golden Star">
@@ -235,10 +227,6 @@
                     <!-- ЕЛЕМЕНТ 3 -->
 
                     <li class="gallery__item" data-aos="fade-up">
-                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                        <script>
-                            AOS.init();
-                        </script>
                         <div class="window__container">
                             <img class="window__img" src="./images/seafood.jpg" alt="Ресторан Seafood">
                             <p class="window__text">
@@ -259,10 +247,6 @@
                     <!-- ЕЛЕМЕНТ 4 -->
 
                     <li class="gallery__item" data-aos="fade-up">
-                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                        <script>
-                            AOS.init();
-                        </script>
                         <div class="window__container">
                             <img class="window__img" src="./images/projectprime.jpg" alt="Проєкт Prime">
                             <p class="window__text">
@@ -282,10 +266,6 @@
                     <!-- ЕЛЕМЕНТ 5 -->
 
                     <li class="gallery__item" data-aos="fade-up">
-                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                        <script>
-                            AOS.init();
-                        </script>
                         <div class="window__container">
                             <img class="window__img" src="./images/projectboxes.jpg" alt="Проєкт Boxes">
                             <p class="window__text">
@@ -305,10 +285,6 @@
                     <!-- ЕЛМЕНТ 6 -->
 
                     <li class="gallery__item" data-aos="fade-up">
-                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                        <script>
-                            AOS.init();
-                        </script>
                         <div class="window__container">
                             <img class="window__img" src="./images/Inspirationhasnoborders.jpg"
                                 alt="Inspiration has no Borders">
@@ -329,10 +305,6 @@
                     <!-- ЕЛЕМЕНТ 7 -->
 
                     <li class="gallery__item" data-aos="fade-up">
-                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                        <script>
-                            AOS.init();
-                        </script>
                         <div class="window__container">
                             <img class="window__img" src="./images/limitededition.jpg" alt="Видання Limited Edition">
                             <p class="window__text">
@@ -352,10 +324,6 @@
                     <!-- ЕЛЕМЕНТ 8 -->
 
                     <li class="gallery__item" data-aos="fade-up">
-                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                        <script>
-                            AOS.init();
-                        </script>
                         <div class="window__container">
                             <img class="window__img" src="./images/lab.jpg" alt="Проєкт LAB">
                             <p class="window__text">
@@ -375,10 +343,6 @@
                     <!-- ЕЛМЕНТ 9 -->
 
                     <li class="gallery__item" data-aos="fade-up">
-                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                        <script>
-                            AOS.init();
-                        </script>
                         <div class="window__container">
                             <img class="window__img" src="./images/growingbusiness.jpg" alt="Growing Business">
                             <p class="window__text">
@@ -417,7 +381,8 @@
 
                 <!-- ЛОГОТИП -->
 
-                <a class="logo" href="./"><span class="web">Web</span><span class="footer-studio">Studio</span></a>
+                <a class="logo footer__logo" href="./"><span class="web">Web</span><span
+                        class="footer-studio">Studio</span></a>
 
 
                 <!-- ГОЛОВНА ЧАСТИНА ПІДВАЛУ -->
@@ -513,22 +478,32 @@
 
 
             <div class="footer__part">
+
                 <form autocomplete="on">
                     <label for="email" class="footer__label">Підпишіться на розсилку</label>
                     <div class="input__container--btn">
                         <input type="text" id="email" class="footer__input" placeholder="E-mail">
+
+                        <button type="button" class="footer__button">
+                            Підписатися
+                            <svg class="footer__icon">
+                                <use href="./icons/symbol-defs.svg#icon-telegram"></use>
+                            </svg>
+                        </button>
                     </div>
                 </form>
-
-                <button type="button" class="footer__button">
-                    Підписатися
-                    <svg class="footer__icon">
-                        <use href="./icons/symbol-defs.svg#icon-telegram"></use>
-                    </svg>
-                </button>
             </div>
         </div>
     </footer>
+
+    <!-- скрипт на скрол -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
 </body>
 
 </html>

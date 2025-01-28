@@ -2,14 +2,18 @@
     display: none;
 }
 
-.filter-section {
-    padding: 94px 0 34px;
-}
-
 .filter__list {
-    margin-bottom: 34px;
+    margin-bottom: 40px;
     @extend %flex;
     column-gap: 8px;
+    row-gap: 15px;
+
+    @media screen and (max-width:767px) {
+        width: 326px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
 }
 
 .filter__button {
@@ -19,6 +23,8 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
     border: none;
     border-radius: 4px;
     padding: 6px 22px;
@@ -38,7 +44,11 @@
 // ГАЛЕРЕЯ
 
 .gallery {
-    padding: 94px 0 34px 0;
+    padding: 60px 0;
+
+    @media screen and (min-width:1200px) {
+        padding: 94px 0;
+    }
 }
 
 .portfolio__title {
@@ -46,7 +56,6 @@
 }
 
 .gallery__list {
-    margin-bottom: 94px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -54,9 +63,19 @@
 }
 
 .gallery__item {
+    width: 450px;
     outline: 1px solid $color-border;
-    flex-basis: calc((100% - 2 * 30px) / 3);
     @include tansition(box-shadow);
+
+    @media screen and (min-width:768px) {
+        width: 354px;
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 370px;
+        flex-basis: calc((100% - 2 * 30px) / 3);
+    }
 }
 
 .gallery__item:hover {
