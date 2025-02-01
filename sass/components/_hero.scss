@@ -1,23 +1,38 @@
 .hero {
+    position: relative;
     background-color: $color-background-dark;
-    background-image: url(../images/owetlay.png), url(../images/mobil-hero-bg.jpg);
+    background-image: url(../images/mobil-hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 118px 0;
     max-width: 1600px;
     margin: 0 auto;
 
-    // @media screen and (min-width:768px) {
-    //     background-image: url(../images/owetlay.png), url(../images/tablet-hero-bg.jpg);
-    // }
 
-    // @media screen and (min-width:1200px) {
-    //     background-image: url(../images/owetlay.png), url(../images/desktop-background.jpg);
-    //     padding: 200px 0;
-    // }
+    @media screen and (min-width:768px) {
+        background-image: url(../images/tablet-hero-bg.jpg);
+    }
+
+    @media screen and (min-width:1200px) {
+        background-image: url(../images/desktop-background.jpg);
+        padding: 200px 0;
+    }
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6));
+    z-index: 1;
+}
+
+
 .hero__title {
+    position: relative;
     color: $color-light;
     min-width: 360px;
     margin: 0 auto 30px;
@@ -28,6 +43,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
+    z-index: 2;
+
 
     @media screen and (min-width:1200px) {
         width: 696px;
@@ -38,6 +55,7 @@
 
 
 .hero__button {
+    position: relative;
     display: block;
     margin: 0 auto;
     padding: 10px 24px;
@@ -51,6 +69,7 @@
     line-height: 187%;
     letter-spacing: 0.06em;
     text-align: center;
+    z-index: 2;
 
     animation-name: sausage;
     animation-duration: 5000ms;
