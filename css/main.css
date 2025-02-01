@@ -252,7 +252,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../images/owetlay.png), url(../images/tablet-hero-bgi.jpg);
+    background-image: url(../images/owetlay.png), url(../images/tablet-hero-bg.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
