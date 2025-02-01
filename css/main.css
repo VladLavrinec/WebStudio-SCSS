@@ -250,17 +250,6 @@ body {
   max-width: 1600px;
   margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
-  .hero {
-    background-image: url(../images/owetlay.png), url(../images/tablet-hero-bg.jpg);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    background-image: url(../images/owetlay.png), url(../images/desktop-background.jpg);
-    padding: 200px 0;
-  }
-}
 
 .hero__title {
   color: #ffffff;
