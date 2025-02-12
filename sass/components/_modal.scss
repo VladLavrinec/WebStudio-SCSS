@@ -6,6 +6,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 3;
 
 
 
@@ -60,6 +61,10 @@
             padding-top: 40px;
             text-align: center;
             fill: $color-font-title;
+
+            @media screen and (min-width:1200px) {
+                width: 448px;
+            }
         }
 
 

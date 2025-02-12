@@ -5,25 +5,52 @@
         @extend %flex;
         height: 60px;
 
+
+
         @media screen and (min-width:768px) {
             height: 80px;
         }
 
         .nav {
-            display: none;
+
+            @media screen and (max-width:480px) {
+                position: relative;
+                left: 276px;
+            }
 
             @media screen and (min-width:768px) {
-                display: contents;
+                display: flex;
+            }
+
+            @media screen and (min-width:480px) {
+                display: flex;
+            }
+
+        }
+
+        .mobile__btn {
+            border: none;
+            background-color: transparent;
+
+            @media screen and (min-width:481px) {
+                position: relative;
+                left: 276px;
             }
         }
 
+        .mobile__img {
+            width: 40px;
+            height: 40px;
+        }
+
         .nav__list {
+            display: none;
             color: $color-font-title;
-            display: flex;
             column-gap: 50px;
 
             @media screen and (min-width:768px) {
                 margin-left: 93px;
+                display: flex;
             }
 
         }
@@ -34,8 +61,13 @@
         }
 
         .nav__link {
+            display: none;
             color: $color-dark;
             @include tansition(color);
+
+            @media screen and (min-width:768px) {
+                display: flex;
+            }
         }
 
         .nav__link:focus,
@@ -155,4 +187,123 @@
             fill: $color-font-active;
         }
     }
+}
+
+// МОБІЛЬНЕ МЕНЮ 
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 40px 48px;
+    background-color: $color-light;
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+// BUTTON 
+
+.menu-toggle {
+    position: absolute;
+    right: 25px;
+    top: 21px;
+    border: none;
+    background-color: $color-light;
+}
+
+.mobile__img {
+    fill: $color-font-title;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.mobile__img--color:hover {
+    fill: $color-font-active;
+}
+
+// НАВІГАЦІЯ
+
+
+.mobile__list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 32px;
+    margin-bottom: 302px;
+}
+
+.mobile__link {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    color: $color-font-title;
+}
+
+.mobile__link:hover {
+    color: $color-font-active;
+}
+
+#mobile__studio {
+    color: $color-font-active;
+}
+
+// СПИСОК 1
+
+.mobile__contact-list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 32px;
+    margin-bottom: 64px;
+}
+
+.mobile__contact-link {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    color: $color-font-text;
+}
+
+.mobile__contact-link--color {
+    color: $color-font-active;
+    font-size: 34px;
+}
+
+// СПИСОК 2 
+
+.menu__social-list {
+    display: flex;
+}
+
+.menu__social-item {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 122%;
+    letter-spacing: 0.02em;
+    color: $color-font-active;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 0 10px;
+}
+
+.menu__social-item:last-child {
+    border: none;
+}
+
+.menu__social-item:first-child {
+    padding-left: 0;
 }
