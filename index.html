@@ -227,7 +227,8 @@
                     <!-- ITEM N1 -->
 
                     <li class="features__item" data-aos="fade-up">
-                        <img class="features__img" src="./images/keyboard.jpg" alt="зображення клавиатури" width="370">
+                        <img class="features__img" srcset="./images/keyboard.jpg 1x, ./images/desktop-s3-img1.jpg 2x"
+                            src="./images/keyboard.jpg" alt="зображення клавиатури">
                         <p class="features__text">
                             десктопні додатки
                         </p>
@@ -236,11 +237,8 @@
                     <!-- ITEM N2 -->
 
                     <li class="features__item" data-aos="fade-up">
-                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                        <script>
-                            AOS.init();
-                        </script>
-                        <img class="features__img" src="./images/laptop.jpg" alt="зображення ноутбуку" width="370">
+                        <img class="features__img" srcset="./images/laptop.jpg 1x, ./images/desktop-s3-img2.jpg 2x"
+                            src="./images/laptop.jpg" alt="зображення ноутбуку">
                         <p class="features__text">
                             мобільні додатки
                         </p>
@@ -249,11 +247,8 @@
                     <!-- ITEM N3 -->
 
                     <li class="features__item" data-aos="fade-up">
-                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                        <script>
-                            AOS.init();
-                        </script>
-                        <img class="features__img" src="./images/tablet.jpg" alt="зображення планшету" width="370">
+                        <img class="features__img" srcset="./images/tablet.jpg 1x, ./images/desktop-s3-img3.jpg 2x"
+                            src="./images/tablet.jpg" alt="зображення планшету">
                         <p class="features__text">
                             дизайнерські рішення
                         </p>
@@ -286,7 +281,15 @@
                     <!-- ITEM N1 -->
 
                     <li class="team__item" data-aos="fade-up">
-                        <img class="team__img" src="./images/mobil.product-designer.jpg" alt="зображеня чоловіка">
+                        <picture>
+                            <source srcset="./images/mobil-product-designer.jpg 1x, ./images/mobile-s4-pd-2x.jpg 2x"
+                                media="(min-width: 480px)">
+                            <source srcset="./images/tablet__product__designer.jpg 1x, ./images/tablet-s4-pd-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/product-designer.jpg 1x, ./images/desktop-s4-pd-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <img class="team__img" src="./images/mobil-product-designer.jpg" alt="зображеня чоловіка">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">
                                 Ігор Дем'яненко
@@ -344,7 +347,16 @@
                     <!-- ITEM N2 -->
 
                     <li class="team__item" data-aos="fade-up">
-                        <img class="team__img" src="./images/mobil-frontend-developer.jpg" alt="зображеня жінки">
+                        <picture>
+                            <source srcset="./images/mobil-frontend-developer.jpg 1x, ./images/mobile-s4-fd-2x.jpg 2x"
+                                media="(min-width: 480px)">
+                            <source
+                                srcset="./images/tablet__frontend__developer.jpg 1x, ./images/tablet-s4-fd-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/frontend-developer.jpg 1x, ./images/desktop-s4-fd-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <img class="team__img" src="./images/mobil-frontend-developer.jpg" alt="зображеня чоловіка">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">
                                 Ольга Рєпіна
@@ -402,7 +414,15 @@
                     <!-- ITEM N3 -->
 
                     <li class="team__item" data-aos="fade-up">
-                        <img class="team__img" src="./images/mobil-marketing.jpg" alt="зображеня чоловіка">
+                        <picture>
+                            <source srcset="./images/./images/mobil-marketing.jpg 1x, ./images/mobile-s4-m-2x.jpg 2x"
+                                media="(min-width: 480px)">
+                            <source srcset="./images/tablet__marketing.jpg 1x, ./images/tablet-s4-m-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/marketing.jpg 1x, ./images/desktop-s4-m-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <img class="team__img" src="./images/./images/mobil-marketing.jpg" alt="зображеня чоловіка">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">
                                 Микола Тарасов
@@ -458,7 +478,15 @@
                     <!-- ITEM N4 -->
 
                     <li class="team__item" data-aos="fade-up">
-                        <img class="team__img" src="./images/mobile-ui-deigner.jpg" alt="зображеня чоловіка">
+                        <picture>
+                            <source srcset="./images/mobile-ui-deigner.jpg 1x, ./images/mobile-ui-deigner.jpg 2x"
+                                media="(min-width: 480px)">
+                            <source srcset="./images/tablet__ui__designer.jpg 1x, ./images/tablet-s4-uid-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/ul-designer.jpg 1x, ./images/desktop-s4-uid-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <img class="team__img" src="./images/./images/mobil-marketing.jpg" alt="зображеня чоловіка">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">
                                 Михайло Єрмаков

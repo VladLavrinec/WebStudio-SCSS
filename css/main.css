@@ -389,7 +389,6 @@ img {
 
 .hero {
   position: relative;
-  background-color: #2F303A;
   background-image: url(../images/mobil-hero-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -408,7 +407,7 @@ img {
     background-image: url(../images/tablet-hero-bg.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/tablet-hero-bgi-2x.png);
   }
@@ -419,7 +418,7 @@ img {
     padding: 200px 0;
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/desktop-hero-bgi-2x.png);
   }
